@@ -1,0 +1,64 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row class="toolbar-row-1">
+        <div>
+            <span class="logo" routerLink="/">Ng-Commerce</span>
+        </div>
+        <div class="search-div">
+            <form class="search-form">
+                <mat-form-field class="categories-form-field-1" style="padding-right: 10px;">
+                    <mat-label>Categories</mat-label>
+                    <mat-select panelCLass="sort-select">
+                        <mat-option value="name">tech</mat-option>
+                        <mat-option value="sports">sport</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <input class="search-input"
+                type="text"
+                name="search"
+                placeholder="Search">
+                <button class="search-button">
+                    search
+                </button>
+            </form>
+        </div>
+        <div class="first-row-icons">
+            <span class="span-icon">
+                <mat-icon aria-label="account_circle">account_circle</mat-icon>
+            </span>
+            <span class="span-icon">
+                <mat-icon aria-label="favorites">notifications</mat-icon>
+            </span>
+            <span class="span-icon">
+                <mat-icon aria-label="favorites">favorite</mat-icon>
+            </span>
+            <span class="span-icon">
+                <mat-icon aria-label="cart" matBadge="3" matBadgeColor="warn" matBadgeSize="small">shopping_cart</mat-icon>
+            </span> 
+        </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="toolbar-row-2">
+        <div class="categories">
+            <mat-form-field class="categories-form-field">
+                <mat-label>Categories</mat-label>
+                <mat-select panelCLass="sort-select">
+                    <mat-option value="name">tech</mat-option>
+                    <mat-option value="sports">sport</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+            <div class="second-row-icons">
+                <span class="span-icon">
+                    <mat-icon aria-label="account_circle">account_circle</mat-icon>
+                </span>
+                <span class="span-icon">
+                    <mat-icon aria-label="favorites">notifications</mat-icon>
+                </span>
+                <span class="span-icon">
+                    <mat-icon aria-label="favorites">favorite</mat-icon>
+                </span>
+                <span class="span-icon">
+                    <mat-icon aria-label="cart" matBadge="3" matBadgeColor="warn" matBadgeSize="small">shopping_cart</mat-icon>
+                </span> 
+            </div>
+    </mat-toolbar-row>
+</mat-toolbar>
