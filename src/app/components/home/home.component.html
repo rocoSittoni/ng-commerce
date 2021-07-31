@@ -1,4 +1,25 @@
 <div class="first-section"></div>
-<div class="suggestions">
-    <h1>New Suggestions</h1>
+<div class="category-wrapper">
+    <div class="category-name">
+        <h1>Technology</h1>
+    </div>
+    <swiper
+      [slidesPerView]="4"
+      [spaceBetween]="50"
+      [navigation]="true"
+      [breakpoints]="breakpoints"
+      [loop]="true"
+      [autoplay]="true"
+      (swiper)="onSwiper($event)"
+      (slideChange)="onSlideChange()">
+      <ng-template swiperSlide>Slide 1</ng-template>
+      <ng-template swiperSlide>Slide 2</ng-template>
+      <ng-template swiperSlide>Slide 3</ng-template>
+      <ng-template swiperSlide>Slide 4</ng-template>
+      <ng-template swiperSlide>Slide 5</ng-template>
+      <ng-template swiperSlide>Slide 6</ng-template>
+      <ng-template swiperSlide>Slide 7</ng-template>
+      <ng-template swiperSlide>Slide 8</ng-template>
+      <ng-template swiperSlide>Slide 9</ng-template>
+    </swiper>
 </div>
