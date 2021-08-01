@@ -34,14 +34,14 @@ export class HomeComponent implements OnInit {
     1024: { slidesPerView: 4, spaceBetween: 50 }
   };
 
-  breakPointsToggle: boolean = false;
-  breakpointChange() {
-    this.breakPointsToggle = !this.breakPointsToggle;
-    this.breakpoints = {
-      640: { slidesPerView: 2, spaceBetween: 20 },
-      768: { slidesPerView: 4, spaceBetween: 40 },
-      1024: { slidesPerView: this.breakPointsToggle ? 7 : 5, spaceBetween: 50 }
-    };
-  }
+  // breakPointsToggle: boolean = false;
+  // breakpointChange() {
+  //   this.breakPointsToggle = !this.breakPointsToggle;
+  //   this.breakpoints = {
+  //     640: { slidesPerView: 2, spaceBetween: 20 },
+  //     768: { slidesPerView: 4, spaceBetween: 40 },
+  //     1024: { slidesPerView: this.breakPointsToggle ? 7 : 5, spaceBetween: 50 }
+  //   };
+  // }
 
 }

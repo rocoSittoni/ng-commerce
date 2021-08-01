@@ -20,6 +20,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
 
 // 3rd party library modules
 import { SwiperModule } from 'swiper/angular';
@@ -45,6 +46,7 @@ import { SwiperModule } from 'swiper/angular';
     MatSelectModule,
     MatOptionModule,
     SwiperModule,
+    MatCardModule
   ],
   exports: [
     MatToolbarModule,
@@ -54,7 +56,8 @@ import { SwiperModule } from 'swiper/angular';
     MatMenuModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatOptionModule
+    MatOptionModule,
+    MatCardModule
   ],
   providers: [
 

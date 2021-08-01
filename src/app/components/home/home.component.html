@@ -12,14 +12,26 @@
       [autoplay]="true"
       (swiper)="onSwiper($event)"
       (slideChange)="onSlideChange()">
-      <ng-template swiperSlide>Slide 1</ng-template>
+      <ng-template swiperSlide>
+        <mat-card class="product-mat-card">
+          <img mat-card-image class="product-image" src="../../../assets/joystick.jpg" alt="product-image">
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original breeds of dog from Japan.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+      </ng-template>
       <ng-template swiperSlide>Slide 2</ng-template>
       <ng-template swiperSlide>Slide 3</ng-template>
       <ng-template swiperSlide>Slide 4</ng-template>
       <ng-template swiperSlide>Slide 5</ng-template>
       <ng-template swiperSlide>Slide 6</ng-template>
-      <ng-template swiperSlide>Slide 7</ng-template>
-      <ng-template swiperSlide>Slide 8</ng-template>
-      <ng-template swiperSlide>Slide 9</ng-template>
     </swiper>
 </div>
