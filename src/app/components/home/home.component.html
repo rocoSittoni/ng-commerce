@@ -4,6 +4,7 @@
         <h1>Technology</h1>
     </div>
     <swiper
+      class="swiper"
       [slidesPerView]="4"
       [spaceBetween]="50"
       [navigation]="true"
@@ -12,26 +13,23 @@
       [autoplay]="true"
       (swiper)="onSwiper($event)"
       (slideChange)="onSlideChange()">
-      <ng-template swiperSlide>
-        <mat-card class="product-mat-card">
-          <img mat-card-image class="product-image" src="../../../assets/joystick.jpg" alt="product-image">
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-          <mat-card-content>
-            <p>
-              The Shiba Inu is the smallest of the six original breeds of dog from Japan.
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
-        </mat-card>
-      </ng-template>
-      <ng-template swiperSlide>Slide 2</ng-template>
-      <ng-template swiperSlide>Slide 3</ng-template>
-      <ng-template swiperSlide>Slide 4</ng-template>
-      <ng-template swiperSlide>Slide 5</ng-template>
-      <ng-template swiperSlide>Slide 6</ng-template>
+      <ng-container *ngFor="let post of data" (click)="openPost(post)">
+        <ng-template swiperSlide class="swiperSlide">
+          <mat-card class="product-mat-card">
+            <img mat-card-image class="product-image" src="../../../assets/joystick.jpg" alt="product-image">
+              <mat-card-title>{{post.price}}</mat-card-title>
+              <mat-card-subtitle>some subtitle</mat-card-subtitle>
+            <mat-card-content>
+              <p>
+                {{post.description}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+        </ng-template>
+      </ng-container>
     </swiper>
 </div>

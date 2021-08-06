@@ -24,7 +24,12 @@
         </div>
         <div class="first-row-icons">
             <span class="span-icon">
-                <mat-icon aria-label="account_circle">account_circle</mat-icon>
+                <mat-icon aria-label="account_circle" [matMenuTriggerFor]="account">account_circle</mat-icon>
+                <mat-menu #account="matMenu">
+                    <h3>Hello there!</h3>
+                    <button mat-menu-item routerLink="login">Log In</button>
+                    <button mat-menu-item routerLink="signup">Sign Up</button>
+                </mat-menu>
             </span>
             <span class="span-icon">
                 <mat-icon aria-label="favorites">notifications</mat-icon>
