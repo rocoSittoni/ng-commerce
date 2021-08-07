@@ -16,6 +16,7 @@ import { SwiperModule } from 'swiper/angular';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { MaterialModule } from './material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { MaterialModule } from './material/material.module';
     HttpClientModule,
     MaterialModule,
     SwiperModule,
+    ReactiveFormsModule
   ],
   exports: [
 
