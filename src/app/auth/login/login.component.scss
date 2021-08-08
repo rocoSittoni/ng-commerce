@@ -23,7 +23,7 @@
 }
 
 .header {
-    margin-top: 5%;
+    margin-top: 3%;
     font-weight: 500;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .forgot-password {
-    margin-left: 10px;
+    margin-left: 8%;
 }
 
 .or {
@@ -53,6 +53,10 @@ mat-checkbox-label {
     height: 16px;
     margin-bottom: 18px;
     margin-left: 6px;
+}
+
+.create-account {
+    margin-top: 1%;
 }
 
 @media (min-width: 765px) {
@@ -71,12 +75,16 @@ mat-checkbox-label {
     }
     .forgot-password {
         font-size: 12px;
+        margin-left: 2%;
+    }
+    mat-checkbox {
+        font-size: 12px;
     }
 }
 
 @media (max-width: 1025px) {
     .header {
-        margin-top: 8%;
+        margin-top: 6%;
     }
     .login-card {
         width: 80%;

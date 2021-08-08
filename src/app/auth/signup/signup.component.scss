@@ -10,9 +10,9 @@
 
 .signup-card {
     width: 40%;
-    height: 70%;
+    height: 78%;
     top: 40%;
-    transform: translate(0, -30%);
+    transform: translate(0, -32%);
     text-align: center;
     position: absolute;
     border-radius: 5px;
@@ -23,7 +23,7 @@
 }
 
 .header {
-    margin-top: 5%;
+    margin-top: 2%;
     font-weight: 500;
 }
 
@@ -32,9 +32,52 @@
     margin: 10px 0px;
 }
 
+.or {
+    margin: 0px;
+}
+
+.google-icon {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 17px;
+    margin-left: 6px;
+}
+
+@media (min-width: 765px) {
+    mat-form-field {
+        width: 50%;
+    }
+    .signup-button, .log-with-google {
+        width: 50%;
+    }
+}
+
 @media (max-width: 480px) {
     .signup-card {
         top: 40%;
         transform: translate(0, -28%);
+    }
+}
+
+@media (max-width: 1025px) {
+    .header {
+        margin-top: 5%;
+    }
+    .signup-card {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 322px) {
+    .header {
+        margin-top: 3%;
+    }
+    .signup-card {
+        height: 85%;
+    }
+    .signup-card {
+        top: 40%;
+        transform: translate(0, -26%);
     }
 }
