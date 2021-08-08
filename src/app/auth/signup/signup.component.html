@@ -11,21 +11,6 @@
                         <mat-error>Name is required</mat-error>
                     </mat-form-field>
                 </div>
-                <div class="col m-0 p-0">
-                    <mat-form-field appearance="fill">
-                        <mat-label for="lastname">Lastname</mat-label>
-                        <input matInput placeholder="Enter your surname" formControlName="lastname">
-                        <mat-hint>Like it appears in your ID</mat-hint>
-                        <mat-error>Surname is required</mat-error>
-                    </mat-form-field>
-                </div>
-            </div>
-            <div class="id-form">
-                <mat-form-field appearance="fill">
-                    <mat-label for="id">ID</mat-label>
-                    <input matInput placeholder="Enter your ID" formControlName="ID">
-                    <mat-error>ID is required</mat-error>
-                </mat-form-field>
             </div>
             <div class="email-form">
                 <mat-form-field appearance="fill">
@@ -53,7 +38,8 @@
             <div class="checkbox m-0 p-0">
                 <mat-checkbox color="accent"><a>I've readed terms and conditions</a></mat-checkbox>
             </div>
-            <button mat-raised-button class="signUp-button" color="accent"><a>Sign Up</a></button>
+            <button mat-raised-button class="signup-button" color="accent"><a>Sign Up</a></button>
         </form>
+        <button mat-raised-button color="warn" class="log-with-google">log with google<mat-icon class="google-icon" svgIcon="google-brands"></mat-icon></button>
     </div>
 </div>

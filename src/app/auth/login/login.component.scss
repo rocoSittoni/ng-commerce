@@ -9,7 +9,7 @@
 }
 
 .login-card {
-    width: 80%;
+    width: 40%;
     height: 70%;
     top: 40%;
     transform: translate(0, -30%);
@@ -22,9 +22,64 @@
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 
+.header {
+    margin-top: 5%;
+    font-weight: 500;
+}
+
+.email-form {
+    margin-top: 4%;
+}
+
+.login-button, .log-with-google {
+    width: 200px;
+    margin: 10px 0px;
+}
+
+.forgot-password {
+    margin-left: 10px;
+}
+
+.or {
+    margin: 0px;
+}
+
+mat-checkbox-label {
+    padding-bottom: 2px;
+}
+
+.google-icon {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 18px;
+    margin-left: 6px;
+}
+
+@media (min-width: 765px) {
+    mat-form-field {
+        width: 50%;
+    }
+    .login-button, .log-with-google {
+        width: 50%;
+    }
+}
+
 @media (max-width: 480px) {
     .login-card {
         top: 40%;
         transform: translate(0, -28%);
+    }
+    .forgot-password {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .header {
+        margin-top: 8%;
+    }
+    .login-card {
+        width: 80%;
+        height: 75%;
     }
 }

@@ -19,6 +19,10 @@ export class AppComponent {
       "search-solid",
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/search-solid.svg")
     );
+    this.matIconRegistry.addSvgIcon(
+      "google-brands",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/google-brands.svg")
+    );
   }
 
 }

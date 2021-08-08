@@ -16,9 +16,13 @@
                     <mat-error *ngIf="password?.invalid && password?.touched">Invalid password</mat-error>
                 </mat-form-field>
                 <br>
-                <mat-checkbox color="accent">Remember Me</mat-checkbox>
+                <mat-checkbox color="accent">Remember me</mat-checkbox>
+                <a class="forgot-password">forgot password?</a>
             </div>
-            <button mat-raised-button class="login-button" color="accent"><a>Login</a></button>
+            <button mat-raised-button class="login-button" color="accent"><a>Log In</a></button>
         </form>
+        <h4 class="or">or</h4>
+        <button mat-raised-button color="warn" class="log-with-google">log with google<mat-icon class="google-icon" svgIcon="google-brands"></mat-icon></button>
+        <h4>New to NgCommerce? Create an account</h4>
     </div>
 </div>
