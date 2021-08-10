@@ -13,6 +13,7 @@
       [autoplay]="true"
       (swiper)="onSwiper($event)"
       (slideChange)="onSlideChange()">
+      <!-- <ng-container *ngFor="let product of products | sortBy: 'category' : 'tech'"></ng-container> -->
       <ng-container *ngFor="let post of data" (click)="openPost(post)">
         <ng-template swiperSlide class="swiperSlide">
           <mat-card class="product-mat-card">
