@@ -4,7 +4,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { SwiperComponent } from "swiper/angular";
 import SwiperCore, { Navigation, Autoplay } from "swiper/core";
 import { HttpService } from 'src/app/services/http.service';
-import { APIResponse, Product } from 'src/app/interfaces/interfaces';
+import { Product } from 'src/app/interfaces/interfaces';
 
 SwiperCore.use([
   Navigation,
@@ -32,21 +32,21 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe((params: Params) => {
-      if (params['product-search']) {
-        this.searchProducts(params['product-search']);
-      }
-    })
+    // this.activatedRoute.params.subscribe((params: Params) => {
+    //   if (params['product-search']) {
+    //     this.searchProducts(params['product-search']);
+    //   }
+    // })
   }
 
-  searchProducts(sort: string, search?: string): void {
-    this.httpService
-      .getProductList(sort, search)
-      .subscribe((productList: APIResponse<Product>) => {
-        this.products = productList.results;
-        console.log(productList);
-      })
-  }
+  // searchProducts(sort: string, search?: string): void {
+  //   this.httpService
+  //     .getProductList(sort, search)
+  //     .subscribe((productList: APIResponse<Product>) => {
+  //       this.products = productList.results;
+  //       console.log(productList);
+  //     })
+  // }
 
   @ViewChild("swiperRef", { static: false }) swiperRef?: SwiperComponent;
   

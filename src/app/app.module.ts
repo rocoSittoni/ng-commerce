@@ -17,8 +17,9 @@ import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { MaterialModule } from './material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
-import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
+import { PostComponent } from './components/post/post.component';
+import { FavoritesComponent } from './components/favorites/favorites.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,9 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
     FooterComponent,
     LoginComponent,
     SignupComponent,
+    PostComponent,
+    FavoritesComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,16 +46,7 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
 
   ],
   providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: HttpHeadersInterceptor,
-      multi: true
-    },
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: HttpErrorsInterceptor,
-      multi: true
-    },
+    
   ],
   bootstrap: [AppComponent]
 })

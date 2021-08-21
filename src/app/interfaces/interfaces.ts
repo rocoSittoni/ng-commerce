@@ -1,11 +1,7 @@
 export interface Product {
-    image: string,
+    id: string
     price: number,
     description: string,
-    categoty: string,
-    id: string
-}
-
-export interface APIResponse<T> {
-    results: Array<T>;
+    category: string,
+    image: string,
 }
